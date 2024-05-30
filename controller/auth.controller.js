@@ -30,7 +30,7 @@ authController.authenticate = (req,res,next) => {
     }
 }
 
-authController.logout = (req,res,next) => {
+authController.logout = (req,res) => {
     try{
         const tokenString = req.headers.authorization;
         if (!tokenString) {
